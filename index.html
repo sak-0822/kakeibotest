@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <script src="kakeibo.js">s</script>
+    <title>kakeibo</title>
+</head>
+<body>
+
+<h2>家計簿</h2>
+<section id="inputSection">
+    <div>
+        <label>所持金</label>
+        <input type="number" id="possesion" placeholder="0">
+    </div>
+    <div>
+        <label>収支</label>
+        <label>
+            <input type="radio" name="balance" value="output" checked>支出
+        </label>
+        <label>
+            <input type="radio" name="balance" value="input">収入
+        </label>
+        <label>日付</label>
+        <input type="date">
+
+    </div>
+    <div>
+        <label>金額</label>
+        <input type="number" placeholder="金額を記入" id="cost">円
+        <label>品名</label>
+        <input type="text" placeholder="商品を記入" id="item">
+    </div>
+</section>
+<div class="submit">
+    <button onclick="onclickSubmit()">登録</button>
+</div>
+
+<section id="outputSection">
+    <label>計算結果</label>
+    <output id="outputPoss">
+
+</section>
+
+</body>
+</html>
